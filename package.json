@@ -1,5 +1,5 @@
 {
-  "name": "react-library",
+  "name": "react-ui",
   "version": "0.0.12",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -13,7 +13,7 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
-    "url": "git@github.com:mitch1009/react-lib.git"
+    "url": "git@github.com:mitch1009/react-ui.git"
   },
   "type": "module",
   "scripts": {
