@@ -26,6 +26,8 @@ jobs:
       -
         name: Install pnpm
         uses: pnpm/action-setup@v2
+        with: 
+          version: 7
       -
         name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -36,7 +38,7 @@ jobs:
         name: Publish package
         run: pnpm publish-gpr
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.ATORIA_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.ATORIA_AUTH }}
   release:
     needs: publish
     runs-on: ubuntu-latest
@@ -58,7 +60,7 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.ATORIA_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ATORIA_AUTH }}
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
