@@ -18,7 +18,7 @@ jobs:
         with:
           token: ${{ secrets.ATORIA_AUTH }}
           release-type: node
-          package-name: react-ui
+          package-name: "@mitch1009/react-ui"
           pull-request-header: ":large_orange_diamond: new release available"
           bump-patch-for-minor-pre-major: true
           
