@@ -42,7 +42,8 @@ jobs:
       -
         name: Build project
         run: pnpm build
-      - run: pnpm publish --no-git-checks
+      - name: Publish package
+        run: pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.ATORIA_AUTH }}
   release:

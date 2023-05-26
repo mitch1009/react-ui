@@ -1,6 +1,5 @@
 {
   "name": "atoria-ui",
-  "private": true,
   "version": "0.0.12",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
