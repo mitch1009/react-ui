@@ -65,6 +65,7 @@ jobs:
         name: Install dependencies
         run: 
             pnpm install --no-frozen-lockfile --production
+            
             pnpm build      
       -
         name: Create release
