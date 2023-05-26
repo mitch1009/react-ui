@@ -59,9 +59,13 @@ jobs:
       -
         name: Install pnpm
         uses: pnpm/action-setup@v2
+        with: 
+          version: 7
       -
         name: Install dependencies
-        run: pnpm install --frozen-lockfile --production
+        run: 
+            pnpm install --no-frozen-lockfile --production
+            pnpm build      
       -
         name: Create release
         id: create_release
