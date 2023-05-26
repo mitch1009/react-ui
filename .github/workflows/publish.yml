@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16
-          registry-url: https://npm.pkg.github.com/
+          registry-url: https://npm.pkg.github.com
           scope: "@mitch1009"
     
         env:
