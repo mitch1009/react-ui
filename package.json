@@ -1,7 +1,7 @@
 {
   "name": "atoria-ui",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "files": [
@@ -15,8 +15,8 @@
     "build": "rollup -c --bundleConfigAsCjs",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "sb": "storybook dev -p 6006",
-    "release":"standard-version",
-    "uno":"standard-version --initial-release",
+    "release": "standard-version",
+    "uno": "standard-version --initial-release",
     "build-storybook": "storybook build",
     "prepare": "husky install"
   },
