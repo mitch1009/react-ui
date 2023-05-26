@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.12](https://github.com/mokkapps/changelog-generator-demo/compare/v0.0.11...v0.0.12) (2023-05-26)
+
+
+### Bug Fixes
+
+* **workflow:** add pnpm version ([865e940](https://github.com/mokkapps/changelog-generator-demo/commits/865e9407c00fc6087f5bd79b7b02f8d7bf3a6640))
+
 ### [0.0.11](https://github.com/mokkapps/changelog-generator-demo/compare/v0.0.1...v0.0.11) (2023-05-26)
 
 
