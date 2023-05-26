@@ -47,13 +47,15 @@ jobs:
         with:
           version: 7
       - name: Install dependencies
+
         run: pnpm install --no-frozen-lockfile
+      - run: pnpm build
+
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
           name: build-artifacts
           path: dist
-      - run: pnpm build
       - name: Publish package
         run: pnpm publish --no-git-checks
         env:
