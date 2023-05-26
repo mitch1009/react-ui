@@ -1,104 +1,49 @@
 name: Publish to GitHub Packages
 on:
   push:
-    tags:
-      - 'v*.*.*'
-  pull_request:
     branches:
       - main
 jobs:
+
+  release-please:
+    needs: publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: google-github-actions/release-please-action@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: node
+          package-name: "@mitch1009/my-package"
   publish:
     runs-on: ubuntu-latest
     steps:
-      -
-        name: Checkout
+      - name: Checkout
         uses: actions/checkout@v2
-      -
-        name: Cache dependencies
+      - name: Cache dependencies
         uses: actions/cache@v1
         with:
           path: ~/.pnpm-store
           key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: setup node
+      - name: Setup Node
         uses: actions/setup-node@v1
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com
           scope: "@mitch1009"
-    
         env:
           NODE_AUTH_TOKEN: ${{secrets.ATORIA_AUTH}}
       - name: Install pnpm
         uses: pnpm/action-setup@v2
-        with: 
+        with:
           version: 7
-      -
-        name: Install dependencies
+      - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
-      -
-        name: Build project
+      - name: Build project
         run: pnpm build
       - name: Publish package
         run: pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.ATORIA_AUTH }}
-  release:
-    needs: publish
-    runs-on: ubuntu-latest
-    # if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
-    steps:
-      -
-        name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ github.ref }}
-      -
-        name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with: 
-          version: 7
-      -
-        name: Install dependencies
-        run: 
-            pnpm install --no-frozen-lockfile
-
-            pnpm build      
-      -
-        name: Create release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.ATORIA_AUTH }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          draft: false
-          prerelease: false
-      -
-        name: Upload artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: my-artifact
-          path: dist/
-      -
-        name: Release message
-        id: release_message
-        run: |
-          echo "New release available at: https://github.com/${{ github.repository }}/releases/tag/${{ env.TAG_NAME }}"
-        env:
-          TAG_NAME: ${{ github.ref }}
-      -
-        name: Comment release message
-        uses: actions/github-script@v3
-        with:
-          script: |
-            github.issues.createComment({
-              issue_number: ${{ github.event.pull_request.number }},
-              owner: '${{ github.repository_owner }}',
-              repo: '${{ github.repository }}',
-              body: '${{ steps.release_message.outputs.release_message }}'
-            })
-          aditionalDependencies: "@octokit/request@5.6.0"
-        # if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
