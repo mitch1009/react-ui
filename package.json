@@ -10,6 +10,12 @@
     "package.json"
   ],
   "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "url": "git@github.com:mitch1009/react-lib.git"
+  },
   "type": "module",
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",

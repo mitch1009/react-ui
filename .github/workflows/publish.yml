@@ -23,8 +23,16 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      -
-        name: Install pnpm
+      - name: setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+          registry-url: https://npm.pkg.github.com/
+          scope: "@tkssharma"
+    
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: Install pnpm
         uses: pnpm/action-setup@v2
         with: 
           version: 7
@@ -34,9 +42,10 @@ jobs:
       -
         name: Build project
         run: pnpm build
-      -
-        name: Publish package
-        run: pnpm publish-gpr
+      - run: git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com" && git config --global user.name "$GITHUB_ACTOR"
+      - run: pnpm release
+      - run: git push --tags && git push
+      - run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.ATORIA_AUTH }}
   release:
