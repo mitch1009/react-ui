@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.19](https://github.com/mokkapps/changelog-generator-demo/compare/v0.0.18...v0.0.19) (2023-05-26)
+
+
+### Bug Fixes
+
+* build name ([abe6c29](https://github.com/mokkapps/changelog-generator-demo/commits/abe6c292bc0d2dd7ff0047233dadda8222649c1f))
+* workflow release ([89ece02](https://github.com/mokkapps/changelog-generator-demo/commits/89ece02ae80ecfaa4a49bf68f2ea81e3784dd3e9))
+
 ### [0.0.18](https://github.com/mokkapps/changelog-generator-demo/compare/v0.0.17...v0.0.18) (2023-05-26)
 
 
