@@ -42,10 +42,9 @@ jobs:
       -
         name: Build project
         run: pnpm build
-
-      - run: git config --global user.email "mitch@goodaction.com" && git config --global user.name "Mitch Chanza"
+      - run: git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com" && git config --global user.name "$GITHUB_ACTOR"
       # - run: pnpm release
-      - run: git push --tags && git push
+      # - run: git push --tags && git push
       - run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.ATORIA_AUTH }}
