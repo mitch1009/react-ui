@@ -22,11 +22,11 @@ jobs:
           token: ${{ secrets.ATORIA_AUTH }}
           bump-patch-for-minor-pre-major: true
           release-type: node
-          package-name: "@mitch1009/react-ui"
-          pull-request-header: ":large_orange_diamond: new release available"
+          package-name: "react-ui"
+          # pull-request-title-pattern: ":large_orange_diamond: new release available"
           # bump-patch-for-minor-pre-major: true
           always-bump-patch: true
-          pull-request-title-pattern: "chore: Release ${version}"
+          pull-request-title-pattern: "chore${scope}: Release ${version}"
           extra-files: |
             README.md
           

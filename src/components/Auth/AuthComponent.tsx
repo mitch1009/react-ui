@@ -23,11 +23,11 @@ export const AuthComponent:React.FC<AuthProps> =({type,data,onSubmit,onChange})=
                  {
                     data.formFields.map(input=>(<>
                      <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                    Email address
+                   {input.label}
                   </label>
                   <div className="mt-2">
                     <input
-                      id="email"
+                      id={input.id}
                       name="email"
                       type="email"
                       autoComplete="email"
