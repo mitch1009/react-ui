@@ -1,11 +1,14 @@
 export declare interface AuthProps{
     type: string
-    data: AuthDtoDataProps
+    data: AuthDtoDataProps,
+    onSubmit: EventListener
+    onChange: EventListener
 }
 
 export declare interface AuthDtoDataProps {
     title: string
     formFields: FormFieldsDto[]
+
 }
 
 export declare interface FormFieldsDto {
