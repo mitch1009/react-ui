@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.27](https://github.com/mokkapps/changelog-generator-demo/compare/v0.0.26...v0.0.27) (2023-05-27)
+
+
+### Features
+
+* update form fields ([5457e8d](https://github.com/mokkapps/changelog-generator-demo/commits/5457e8d7a2c383e2862a9ec737b77e722162d5ec))
+
 ### [0.0.26](https://github.com/mokkapps/changelog-generator-demo/compare/v0.2.0...v0.0.26) (2023-05-27)
 
 
