@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://www.github.com/mitch1009/react-ui/compare/v0.2.0...v0.3.0) (2023-05-27)
+
+
+### Features
+
+* add form fields ([2323463](https://www.github.com/mitch1009/react-ui/commit/2323463eced9cf32df3335df13882a3af9677a90))
+* add more ([9df9113](https://www.github.com/mitch1009/react-ui/commit/9df9113d0baefcd04e176a17ffa88dac1bcade59))
+* add othes ([510c0d8](https://www.github.com/mitch1009/react-ui/commit/510c0d8f5982bd39803ac2530a0e3a39589944c3))
+* add type on title ([c8b13c4](https://www.github.com/mitch1009/react-ui/commit/c8b13c49a604f8ba2fa674f550b660b2be2204c0))
+* fixed ([41a5d6f](https://www.github.com/mitch1009/react-ui/commit/41a5d6f47c883a7397646204bc81f104f7f37655))
+* update form fields ([5457e8d](https://www.github.com/mitch1009/react-ui/commit/5457e8d7a2c383e2862a9ec737b77e722162d5ec))
+
 ### [0.0.28](https://github.com/mokkapps/changelog-generator-demo/compare/v0.0.27...v0.0.28) (2023-05-27)
 
 
