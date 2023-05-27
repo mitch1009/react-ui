@@ -2,12 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+
+### [0.0.23](https://github.com/mokkapps/changelog-generator-demo/compare/v0.0.22...v0.0.23) (2023-05-27)
 ## [0.1.0](https://www.github.com/mitch1009/react-ui/compare/v0.0.22...v0.1.0) (2023-05-27)
 
 
 ### Features
 
+
+* add Dto ([3aeb77f](https://github.com/mokkapps/changelog-generator-demo/commits/3aeb77f1821f97f0ef283287774705f8d6479a29))
+* add event listener ([2244c30](https://github.com/mokkapps/changelog-generator-demo/commits/2244c300a1e9bc59f3b8fd613a5a890ec497c4ca))
+
+
+### Bug Fixes
+
+* add extra files ([23ba5fc](https://github.com/mokkapps/changelog-generator-demo/commits/23ba5fc7e7053dfbfb9f41122d4ba9495fa3cba2))
 * add Dto ([3aeb77f](https://www.github.com/mitch1009/react-ui/commit/3aeb77f1821f97f0ef283287774705f8d6479a29))
+
 
 ### [0.0.22](https://github.com/mokkapps/changelog-generator-demo/compare/v0.0.21...v0.0.22) (2023-05-27)
 

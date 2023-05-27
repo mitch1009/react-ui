@@ -20,10 +20,13 @@ jobs:
         uses: google-github-actions/release-please-action@v2
         with:
           token: ${{ secrets.ATORIA_AUTH }}
+          bump-patch-for-minor-pre-major: true
           release-type: node
           package-name: "@mitch1009/react-ui"
           pull-request-header: ":large_orange_diamond: new release available"
-          bump-patch-for-minor-pre-major: true
+          # bump-patch-for-minor-pre-major: true
+          extra-files: |
+            README.md
           
   publish:
     runs-on: ubuntu-latest

@@ -1,7 +1,7 @@
 import React from "react"
 import { AuthProps } from "./AuthDto"
 
-export const AuthComponent:React.FC<AuthProps> =({type,data})=>{
+export const AuthComponent:React.FC<AuthProps> =({type,data,onSubmit,onChange})=>{
     return (
       <>
         <div className="flex min-h-full flex-1 flex-col justify-center py-12 sm:px-6 lg:px-8">
