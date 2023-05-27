@@ -4,8 +4,8 @@ on:
     tags:
       - v*.*.*
   pull_request:
-    branches:
-      - main
+   types: 
+    - closed
 jobs:
 
   release-please:
