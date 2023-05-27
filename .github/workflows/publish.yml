@@ -25,6 +25,8 @@ jobs:
           package-name: "@mitch1009/react-ui"
           pull-request-header: ":large_orange_diamond: new release available"
           # bump-patch-for-minor-pre-major: true
+          always-bump-patch: true
+          pull-request-title-pattern: ${version}
           extra-files: |
             README.md
           
