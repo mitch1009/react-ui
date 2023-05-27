@@ -2,6 +2,43 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.26](https://github.com/mokkapps/changelog-generator-demo/compare/v0.2.0...v0.0.26) (2023-05-27)
+
+
+### Features
+
+* add form fields ([2323463](https://github.com/mokkapps/changelog-generator-demo/commits/2323463eced9cf32df3335df13882a3af9677a90))
+* add more ([9df9113](https://github.com/mokkapps/changelog-generator-demo/commits/9df9113d0baefcd04e176a17ffa88dac1bcade59))
+* add othes ([510c0d8](https://github.com/mokkapps/changelog-generator-demo/commits/510c0d8f5982bd39803ac2530a0e3a39589944c3))
+* add type on title ([c8b13c4](https://github.com/mokkapps/changelog-generator-demo/commits/c8b13c49a604f8ba2fa674f550b660b2be2204c0))
+
+
+### Chore
+
+* **release:** 0.0.24 ([d3468f0](https://github.com/mokkapps/changelog-generator-demo/commits/d3468f03a8be0848c8975cc57b219b513c1c904f))
+* **release:** 0.0.24 ([f6d7750](https://github.com/mokkapps/changelog-generator-demo/commits/f6d775062a2def06cd730c3f07f01782e4e69192))
+* **release:** 0.0.25 ([9c5d697](https://github.com/mokkapps/changelog-generator-demo/commits/9c5d697ced10f9896564ebd039f5cac1238235f8))
+* **release:** 0.0.25 ([f330636](https://github.com/mokkapps/changelog-generator-demo/commits/f330636776d4ed8e5d60ed8fd91549e100a921a4))
+* updated workflow ([4310e33](https://github.com/mokkapps/changelog-generator-demo/commits/4310e338ae686c6773d3bd3b725556f9324c295b))
+
+### [0.0.25](https://github.com/mokkapps/changelog-generator-demo/compare/v0.2.0...v0.0.25) (2023-05-27)
+
+
+### Features
+
+* add form fields ([2323463](https://github.com/mokkapps/changelog-generator-demo/commits/2323463eced9cf32df3335df13882a3af9677a90))
+* add more ([9df9113](https://github.com/mokkapps/changelog-generator-demo/commits/9df9113d0baefcd04e176a17ffa88dac1bcade59))
+* add othes ([510c0d8](https://github.com/mokkapps/changelog-generator-demo/commits/510c0d8f5982bd39803ac2530a0e3a39589944c3))
+* add type on title ([c8b13c4](https://github.com/mokkapps/changelog-generator-demo/commits/c8b13c49a604f8ba2fa674f550b660b2be2204c0))
+
+
+### Chore
+
+* **release:** 0.0.24 ([d3468f0](https://github.com/mokkapps/changelog-generator-demo/commits/d3468f03a8be0848c8975cc57b219b513c1c904f))
+* **release:** 0.0.24 ([f6d7750](https://github.com/mokkapps/changelog-generator-demo/commits/f6d775062a2def06cd730c3f07f01782e4e69192))
+* **release:** 0.0.25 ([f330636](https://github.com/mokkapps/changelog-generator-demo/commits/f330636776d4ed8e5d60ed8fd91549e100a921a4))
+* updated workflow ([4310e33](https://github.com/mokkapps/changelog-generator-demo/commits/4310e338ae686c6773d3bd3b725556f9324c295b))
+
 ### [0.0.24](https://github.com/mokkapps/changelog-generator-demo/compare/v0.0.23...v0.0.24) (2023-05-27)
 
 
