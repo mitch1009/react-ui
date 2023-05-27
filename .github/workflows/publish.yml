@@ -26,7 +26,7 @@ jobs:
           pull-request-header: ":large_orange_diamond: new release available"
           # bump-patch-for-minor-pre-major: true
           always-bump-patch: true
-          pull-request-title-pattern: ${version}
+          pull-request-title-pattern: "chore: Release ${version}"
           extra-files: |
             README.md
           
