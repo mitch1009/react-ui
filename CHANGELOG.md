@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.22](https://github.com/mokkapps/changelog-generator-demo/compare/v0.0.21...v0.0.22) (2023-05-27)
+
+
+### Features
+
+* add AuthComponent ([07fcfc9](https://github.com/mokkapps/changelog-generator-demo/commits/07fcfc97ecb46eebce3a9ed871e18b767f45fe31))
+* update auth component ([84ac0dd](https://github.com/mokkapps/changelog-generator-demo/commits/84ac0dd9c218363814d2b511755d58d763226602))
+
+
+### Bug Fixes
+
+* workflow package name ([b67b440](https://github.com/mokkapps/changelog-generator-demo/commits/b67b44057a0255d0951bd51799fc80fc8bb996a6))
+
+
+### Chore
+
+* requires merge to run ([9e9b228](https://github.com/mokkapps/changelog-generator-demo/commits/9e9b228d49fc2f5441b54afc55eef5903b9ff8f7))
+
 ### [0.0.21](https://github.com/mokkapps/changelog-generator-demo/compare/v0.0.20...v0.0.21) (2023-05-26)
 
 
