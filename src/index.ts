@@ -1,1 +1,1 @@
-export {Avatars, Likes} from "./components"
+export {Avatars, Likes,AuthComponent} from "./components"
