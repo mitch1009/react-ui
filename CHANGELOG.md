@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 
+## [0.2.0](https://www.github.com/mitch1009/react-ui/compare/v0.1.0...v0.2.0) (2023-05-27)
+
+
+### Features
+
+* add event listener ([2244c30](https://www.github.com/mitch1009/react-ui/commit/2244c300a1e9bc59f3b8fd613a5a890ec497c4ca))
+
+
+### Bug Fixes
+
+* add extra files ([23ba5fc](https://www.github.com/mitch1009/react-ui/commit/23ba5fc7e7053dfbfb9f41122d4ba9495fa3cba2))
+
 ### [0.0.23](https://github.com/mokkapps/changelog-generator-demo/compare/v0.0.22...v0.0.23) (2023-05-27)
 ## [0.1.0](https://www.github.com/mitch1009/react-ui/compare/v0.0.22...v0.1.0) (2023-05-27)
 
